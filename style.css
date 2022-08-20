@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    width: 100%;
+    padding: 20px 30px;
+     box-shadow: 0px 1px 6px black;
+     color: rgb(255, 60, 93);    
+}
+.imgbox{
+    padding: 10px;
+    width: 100%;
+    display: flex; 
+    justify-content: center;   
+}
+img{
+    width:90vw;
+}
+.content{
+    padding: 1em 1.5em;
+}
+.content h1{
+    margin-bottom: 20px;
+}
+.content p {
+    max-width: 500px;
+}
+.cards{
+    padding: 20px;
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+
+}
+.card{
+    min-width: 200px;
+    margin: 0 20px;
+}
+.img-box{
+    width: 100%;
+
+    overflow: none;
+}
+.img-box img{
+    width: 100%;
+    border-radius: 10px ;
+}
+
+.data ,span,p{
+    padding:2px;
+
+}
+
+.footer{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: white;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px ;
+}
+.star{
+    color: rgb(255, 60, 93);
+    font-size: 1.4em;
+}
+.counter,.country{
+    font-weight: light ;
+    color: gray;
+}
+.fee{
+    font-weight: bold;
+}
+@media (max-width:500px) {
+    
+    .cards{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   
+        flex-wrap: wrap; 
+    }
+    .card{
+        margin: 10px auto;
+    }
+
+    .img-box img{
+        width: 70vw;
+        border-radius: 10px ;
+    }
+    
+
+}
